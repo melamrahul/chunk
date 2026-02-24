@@ -3,14 +3,12 @@
             --text: #000000;
             --border: #4468a9;
             --accent: #ff5e5b;
-            /* Ko-fi Red/Pink */
             --accent-hover: #e04e4b;
             --secondary: #f3f3f3;
             --success: #107225;
             --goal-green: #3ed676;
             --border-width: 2px;
             --radius: 0px;
-            /* Sharp edges default */
         }
 
         * {
@@ -28,12 +26,8 @@
             display: flex;
             flex-direction: column;
             padding-bottom: 80px;
-            /* Space for fixed footer */
         }
 
-        /* ==========================================
-   GLOBAL LOADER
-   ========================================== */
         .global-loader {
             position: fixed;
             inset: 0;
@@ -74,11 +68,9 @@
         }
 
         .loader-label {
-            font-family: var(--font-head);
             font-size: 1rem;
             font-weight: 600;
             letter-spacing: 0.2em;
-            color: var(--muted);
             text-transform: uppercase;
         }
 
@@ -98,12 +90,11 @@
             border-radius: 50px;
             font-size: 13px;
             font-weight: 600;
-            font-family: var(--font-body);
             display: flex;
             align-items: center;
             gap: 7px;
             box-shadow: 0 4px 20px rgba(0, 185, 254, 0.3);
-            transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+            transition: transform 0.2s, background 0.2s;
             z-index: 99;
             text-decoration: none;
         }
@@ -111,14 +102,12 @@
         .float-support:hover {
             transform: translateY(-3px);
             background: #009ad6;
-            box-shadow: 0 8px 24px rgba(0, 185, 254, 0.4);
         }
 
         .float-support img {
             width: 20px;
             height: 20px;
         }
-
 
         .container {
             width: 100%;
@@ -130,14 +119,16 @@
             padding: 15px;
         }
 
-        /* ── Header ── */
         .header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 20px;
             border-bottom: var(--border-width) solid var(--border);
-            padding-bottom: 15px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 8px;
+            padding-right: 8px;
         }
 
         .logo-area {
@@ -173,7 +164,6 @@
             color: var(--bg);
         }
 
-        /* ── Main Card ── */
         .card {
             border: var(--border-width) solid var(--border);
             margin-bottom: 20px;
@@ -201,7 +191,6 @@
             padding: 12px;
             font-weight: 700;
             font-size: 0.9rem;
-            font-weight: bold;
             border: none;
             border-right: var(--border-width) solid var(--border);
             background: white;
@@ -301,97 +290,105 @@
             font-size: 0.9rem;
         }
 
-        /* ── Preview ── */
-        /* ── Video Preview — big centered thumbnail ─────────────────── */
-            #video-preview {
-                display: none;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                padding: 16px 0 12px;
-                gap: 12px;
-            }
-            #video-preview.visible {
-                display: flex;
-            }
-            
-            #video-thumb {
-                width: 100%;
-                max-width: 400px;
-                aspect-ratio: 16 / 9;
-                object-fit: cover;
-                border-radius: 12px;
-                background: #1a1a1a;
-                display: block;
-            }
-            
-            .video-meta {
-                width: 100%;
-            }
-            
-            .video-title {
-                font-size: 0.97rem;
-                font-weight: 700;
-                line-height: 1.45;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-align: center;
-            }
-            
-            .video-channel {
-                font-size: 0.78rem;
-                opacity: 0.5;
-                margin-top: 4px;
-                text-align: center;
-            }
-            
-            /* ── Progress / status row ──────────────────────────────────── */
-            
-            /* Hide the old horizontal bar */
-            #progress-track {
-                display: none !important;
-            }
-            
-            /* New progress row: [status text]  [infinity loader] */
-            #status-box {
-                display: none;
-                align-items: center;
-                gap: 10px;
-                padding: 10px 2px 4px;
-            }
-            #status-box.visible {
-                display: flex;
-                flex-direction: row-reverse; /* loader on right, text on left */
-                justify-content: flex-end;
-            }
-            
-            #status-label {
-                font-size: 0.85rem;
-                font-weight: 600;
-                opacity: 0.85;
-                flex: 1;
-                text-align: left;
-            }
-            
-            /* Infinity loader image — sits to the right of the text */
-            #status-box .infinity-loader {
-                width: 32px;
-                height: 32px;
-                flex-shrink: 0;
-                object-fit: contain;
-            }
-            
-            /* Hide the old round-spinner-wrap since loader is now inside status-box */
-            .round-spinner-wrap {
-                display: none !important;
-            }
+        /* ═══════════════════════════════════════════
+           RAHUL CONTAINER — improved styles
+           ═══════════════════════════════════════════ */
 
+        /* 1. Thumbnail: full-width, centered, 16:9 */
+        #video-preview {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 14px 14px 0;
+            gap: 10px;
+            border-top: 2px solid var(--border);
+        }
 
-        /* Show percentage text inside bar if needed, or rely on status box */
+        #video-preview.visible {
+            display: flex;
+        }
 
-        /* ── Download Button ── */
+        #video-thumb {
+            width: 100%;
+            max-width: 380px;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 0px;
+            background: #1a1a1a;
+            display: block;
+            margin: 0 auto;
+            /* centers it */
+        }
+
+        /* 2. Title + channel: below the thumb, centered */
+        .video-meta {
+            width: 100%;
+        }
+
+        .video-title {
+            font-size: 0.93rem;
+            font-weight: 700;
+            line-height: 1.45;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .video-channel {
+            font-size: 0.76rem;
+            opacity: 0.5;
+            margin-top: 3px;
+            text-align: center;
+        }
+
+        /* 3. Status box: white background, loader LEFT, text RIGHT */
+        #progress-track {
+            display: none !important;
+        }
+
+        .round-spinner-wrap {
+            display: none !important;
+        }
+
+        #status-box {
+            display: none;
+            flex-direction: row;
+            /* loader on LEFT, label on RIGHT */
+            align-items: center;
+            gap: 8px;
+            margin: 12px 14px 14px;
+            padding: 0px 10px;
+            background: #ffffff;
+            border: 1.5px solid var(--border);
+            border-radius: 0px;
+        }
+
+        #status-box.visible {
+            display: flex;
+        }
+
+        /* 4. Infinity loader — small, left side */
+        #status-box .infinity-loader {
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
+            object-fit: contain;
+        }
+
+        /* 5. Text — right of loader, left-aligned */
+        #status-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--border);
+            text-align: left;
+            line-height: 1;
+        }
+
+        /* ═══════════════════════════════════════════ */
+
         #download-btn {
             display: none;
             width: 100%;
@@ -411,7 +408,6 @@
             display: block;
         }
 
-        /* ── SUCCESS VIEW ── */
         #success-view {
             display: none;
             text-align: center;
@@ -457,7 +453,7 @@
 
         .kofi-btn:active {
             transform: translate(2px, 2px);
-            box-shadow: 0px 0px 0px var(--border);
+            box-shadow: none;
         }
 
         .convert-again-btn {
@@ -468,7 +464,6 @@
             font-size: 0.9rem;
             font-weight: 800;
             border: var(--border-width) solid var(--border);
-            text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
             box-shadow: 3px 3px 0px var(--border);
@@ -480,7 +475,6 @@
             box-shadow: 5px 5px 0px var(--border);
         }
 
-        /* ── FIXED FOOTER (Goal Bar) ── */
         .fixed-footer {
             width: 100%;
             background: white;
@@ -492,7 +486,6 @@
         .goal-pill {
             background: #f2f4eb;
             border-radius: 10px;
-            /* Fully rounded like image */
             height: 50px;
             position: relative;
             overflow: hidden;
@@ -533,9 +526,6 @@
             font-size: 0.9rem;
             font-weight: 800;
             padding-right: 12px;
-            background: transparent;
-            padding: 2px 8px;
-            border-radius: 4px;
         }
 
         .goal-icon {
@@ -549,11 +539,10 @@
             left: 0;
             width: 100%;
             text-align: center;
-            margin-top: 20px;
             font-size: 1rem;
             font-weight: 600;
             color: #09759c;
-            padding: 10px 0px;
+            padding: 10px 0;
             border: 1.5px solid var(--border);
         }
 
