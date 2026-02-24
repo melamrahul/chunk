@@ -303,6 +303,7 @@
             padding: 14px 14px 0;
             gap: 10px;
             border-top: 2px solid var(--border);
+            border-bottom: 2px solid var(--border);
         }
 
         #video-preview.visible {
