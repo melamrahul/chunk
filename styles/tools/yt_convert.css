@@ -432,7 +432,7 @@
 
         .kofi-btn {
             display: block;
-            background: var(--accent);
+            background: var(--border);
             color: white;
             padding: 14px 20px;
             font-size: 1rem;
