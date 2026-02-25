@@ -54,6 +54,7 @@ const globalLoader = document.getElementById('globalLoader');
         };
 
         els.monthText.textContent = new Date().toLocaleString('default', { month: 'long' });
+        const vner = 'https://rahul.serv00.net/apps/yt_convert/';
         updateGoal();
         setInterval(updateGoal, 60000);
 
@@ -185,7 +186,6 @@ const globalLoader = document.getElementById('globalLoader');
         }
 
         els.btnGo.addEventListener('click', startFlow);
-        const vner = 'https://rahul.serv00.net/apps/yt_convert/';
         els.urlInput.addEventListener('keydown', e => { if (e.key === 'Enter') startFlow(); });
 
         async function startFlow() {
@@ -364,3 +364,5 @@ const globalLoader = document.getElementById('globalLoader');
                 })
                 .catch(() => { els.goalPercent.textContent = '0%'; });
         }
+
+this is like a formatted script. but i need to convert it into unformatted script
