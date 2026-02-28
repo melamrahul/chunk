@@ -477,7 +477,6 @@
         .fixed-footer {
             width: 100%;
             background: white;
-            z-index: 1000;
             padding: 10px 15px;
             margin-top: -10px;
         }
