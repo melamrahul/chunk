@@ -548,3 +548,163 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
+
+            /* New Styles */
+
+        .cloudflare-note {
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: green;
+            margin-top: -10px;
+        }
+
+        .cloudflare-img {
+            width: 80px;
+            height: 40px;
+            vertical-align: middle;
+            margin-bottom: 25px;
+        }
+
+        @media (min-width: 1024px) {
+            .cloudflare-note {
+                font-size: 1.2rem;
+            }
+
+            .cloudflare-img {
+                width: 105px;
+                height: 70px;
+                margin-bottom: 40px;
+            }
+        }
+
+        .why-title {
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: -25px;
+        }
+
+        @media (min-width: 1024px) {
+            .why-title {
+                margin-top: -40px;
+            }
+        }
+
+        .youtube-block {
+            /* border: 2px solid var(--border); */
+            margin-bottom: 20px;
+            background: white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .youtube-block-header {
+            background: var(--border);
+            color: white;
+            padding: 10px 15px;
+            font-weight: 800;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .youtube-block-body {
+            padding: 15px 15px 5px;
+        }
+
+        .youtube-block h2 {
+            font-size: 0.85rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--border);
+            border-left: 3px solid var(--accent);
+            padding-left: 8px;
+            margin: 16px 0 8px;
+        }
+
+        .youtube-block h2:first-child {
+            margin-top: 0;
+        }
+
+        .youtube-block p {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: #333;
+            line-height: 1.65;
+            margin-bottom: 10px;
+        }
+
+        .youtube-block p strong {
+            color: var(--border);
+            font-weight: 800;
+        }
+
+        /* FAQ accordion — styled like the existing .card / tab system */
+        .youtube-faq {
+
+            margin: 12px -15px 0;
+        }
+
+        .youtube-faq details {
+            border-bottom: 1px solid #d7e0fb;
+        }
+
+        .youtube-faq details:last-child {
+            border-bottom: none;
+        }
+
+        .youtube-faq summary {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 0.82rem;
+            color: var(--border);
+            cursor: pointer;
+            padding: 11px 15px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            transition: background 0.1s;
+        }
+
+        .head {
+            display: none;
+        }
+
+        .youtube-faq summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .youtube-faq summary::after {
+            content: "+";
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--accent);
+            flex-shrink: 0;
+            margin-left: 8px;
+        }
+
+        .youtube-faq details[open]>summary {
+            background: #d7e0fb;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .youtube-faq details[open]>summary::after {
+            content: "−";
+        }
+
+        .youtube-faq details p {
+            font-size: 0.83rem;
+            font-weight: 400;
+            color: #333;
+            line-height: 1.6;
+            padding: 10px 15px 12px;
+            margin: 0;
+            background: #f8f9ff;
+        }
