@@ -80,7 +80,7 @@
             }
         }
 
-        .float-support {
+    .float-support {
             position: fixed;
             bottom: 52px;
             left: 18px;
@@ -97,6 +97,9 @@
             transition: transform 0.2s, background 0.2s;
             z-index: 99;
             text-decoration: none;
+
+            overflow: hidden; /* needed for shine */
+            position: fixed;
         }
 
         .float-support:hover {
@@ -109,6 +112,31 @@
             height: 20px;
         }
 
+        /* Shine effect */
+        .float-support::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -120%;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                transparent,
+                rgba(255,255,255,0.6),
+                transparent
+            );
+            transform: skewX(-25deg);
+            animation: supportShine 3s infinite;
+        }
+
+        @keyframes supportShine {
+            0% {
+                left: -120%;
+            }
+            100% {
+                left: 150%;
+            }
         .container {
             width: 100%;
             max-width: 640px;
@@ -531,6 +559,34 @@
             height: 28px;
         }
 
+       .goal-pill::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -120%;
+                width: 60%;
+                height: 100%;
+                background: linear-gradient(
+                    120deg,
+                    transparent,
+                    rgba(255,255,255,0.6),
+                    transparent
+                );
+                transform: skewX(-25deg);
+                animation: goalShine 4s infinite;
+                z-index: 3;
+                pointer-events: none;
+            }
+            
+            @keyframes goalShine {
+                0% {
+                    left: -120%;
+                }
+                100% {
+                    left: 150%;
+                }
+            }
+
         footer {
             position: fixed;
             bottom: 0;
@@ -707,4 +763,25 @@
             padding: 10px 15px 12px;
             margin: 0;
             background: #f8f9ff;
+        }
+
+         .reddit {
+            display: flex;
+            margin-bottom: 40px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            column-gap: 20px;
+            font-size: 1rem;
+        }
+
+        .reddit a {
+            color: #fff;
+            background-color: #5865F2;
+            padding: 10px 20px;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
         }
