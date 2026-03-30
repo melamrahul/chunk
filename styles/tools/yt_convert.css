@@ -767,27 +767,33 @@
             }
         }
 
-        /* Breathing border */
         .goal-pill {
-            animation: borderPulse 3s ease-in-out infinite;
+            animation: accentPulse 3s ease-in-out infinite;
         }
 
-        @keyframes borderPulse {
+        @keyframes accentPulse {
             0% {
-                border-width: 1.5px;
-                box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+                border-color: var(--accent);
+                box-shadow:
+                    2px 2px 0px rgba(0, 0, 0, 0.1),
+                    0 0 0px var(--accent);
             }
 
             50% {
-                border-width: 2.5px;
-                box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+                border-color: var(--accent);
+                box-shadow:
+                    2px 2px 0px rgba(0, 0, 0, 0.1),
+                    0 0 5px var(--accent);
             }
 
             100% {
-                border-width: 1.5px;
-                box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+                border-color: var(--accent);
+                box-shadow:
+                    2px 2px 0px rgba(0, 0, 0, 0.1),
+                    0 0 0px var(--accent);
             }
         }
+
         .reddit {
             display: flex;
             margin-bottom: 40px;
