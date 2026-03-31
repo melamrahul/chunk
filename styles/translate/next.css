@@ -1,0 +1,160 @@
+#et-lang-btn {
+            display: inline-flex;
+            padding: 2px 3px;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            border: 1.5px solid var(--border, #ccc);
+            border-radius: 8px;
+            background: transparent;
+            color: inherit;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+
+        #et-lang-btn:hover {
+            background: rgba(128, 128, 128, 0.08);
+        }
+
+        /* Desktop dropdown picker */
+        #et-lang-picker {
+            position: absolute;
+            top: calc(100% + 6px);
+            right: 0;
+            width: 240px;
+            max-height: 360px;
+            overflow-y: auto;
+            background: #fff;
+            border: 1.5px solid #d0d0d0;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            z-index: 9999;
+            padding: 6px;
+        }
+
+        .et-lang-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.12s;
+        }
+
+        .et-lang-item:hover {
+            background: #f0f5ff;
+        }
+
+        .et-lang-item.et-active {
+            background: #e8efff;
+        }
+
+        .et-item-flag {
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .et-item-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+            flex: 1;
+        }
+
+        .et-item-native {
+            font-size: 11px;
+            color: #888;
+        }
+
+        /* Click-away overlay */
+        #et-lang-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 9998;
+        }
+
+        /* ---- Mobile bottom sheet ---- */
+        @media (max-width: 768px) {
+            #et-lang-picker {
+                position: fixed;
+                top: auto !important;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                max-height: 70vh;
+                border-radius: 16px 16px 0 0;
+                border-bottom: none;
+                overflow-y: auto;
+            }
+
+            #et-lang-overlay {
+                background: rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        /* Suppress ALL Google Translate UI */
+        .goog-te-banner-frame,
+        .goog-te-balloon-frame,
+        .goog-te-menu-frame,
+        #goog-gt-tt,
+        .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+            display: none !important;
+        }
+
+        body {
+            top: 0 !important;
+            position: static !important;
+        }
+
+        #google_translate_element {
+            display: none !important;
+        }
+
+        font,
+        .goog-text-highlight {
+            font-family: inherit !important;
+            font-size: inherit !important;
+            background: none !important;
+            box-shadow: none !important;
+        }
+
+        body {
+            top: 0 !important;
+            margin-top: 0 !important;
+            position: static !important;
+        }
+
+        /* Target the exact class from your rendered HTML */
+        .VIpgJd-ZVi9od-ORHb-OEVmcd,
+        .VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+        .VIpgJd-ZVi9od-aZ2wEe-OiiCO {
+            display: none !important;
+            height: 0 !important;
+            visibility: hidden !important;
+        }
+
+        #et-lang-btn {
+            display: flex;
+            align-items: center;
+        }
+
+        .et-translate-icon {
+            width: 25px;
+            height: 25px;
+        }
+
+        /* Hide "Translate" text on mobile */
+        .et-translate-text {
+            display: none;
+        }
+
+        /* Show on desktop */
+        @media (min-width: 768px) {
+            .et-translate-text {
+                display: inline;
+                font-weight: 600;
+                padding: 0 6px;
+            }
+        }
