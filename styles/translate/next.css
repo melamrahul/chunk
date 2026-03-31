@@ -17,19 +17,47 @@
         }
 
         /* Desktop dropdown picker */
+        /* Desktop modal */
         #et-lang-picker {
-            position: absolute;
-            top: calc(100% + 6px);
-            right: 0;
-            width: 240px;
-            max-height: 360px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 320px;
+            max-height: 420px;
             overflow-y: auto;
             background: #fff;
             border: 1.5px solid #d0d0d0;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-            z-index: 9999;
-            padding: 6px;
+            border-radius: 14px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+            z-index: 10001;
+            padding: 10px;
+        }
+
+        @media (max-width:768px) {
+
+            #et-lang-picker {
+                top: auto;
+                left: 0;
+                bottom: 0;
+                transform: none;
+                width: 100%;
+                max-height: 70vh;
+                border-radius: 18px 18px 0 0;
+                padding: 14px;
+            }
+
+        }
+
+        #et-lang-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(2px);
+            z-index: 10000;
         }
 
         .et-lang-item {
@@ -141,8 +169,8 @@
         }
 
         .et-translate-icon {
-            width: 25px;
-            height: 25px;
+            width: 30px;
+            height: 30px;
         }
 
         /* Hide "Translate" text on mobile */
