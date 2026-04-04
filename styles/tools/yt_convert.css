@@ -869,7 +869,7 @@
             background: rgba(255, 255, 255, 0.55);
             border: 1.5px solid var(--border);
             border-radius: 4px;
-            height: 14px;
+            height: 30px;
             overflow: hidden;
             width: 100%;
         }
