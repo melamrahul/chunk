@@ -187,6 +187,7 @@
             font-weight: 800;
             text-decoration: none;
             transition: all 0.1s;
+            border-radius: var(--radius);
         }
 
         .tools-btn:hover {
@@ -353,6 +354,7 @@
             text-align: center;
             padding: 14px 14px 0;
             gap: 10px;
+            border-radius: var(--radius)
             border-top: 2px solid var(--border);
             border-bottom: 2px solid var(--border);
         }
@@ -363,13 +365,14 @@
 
         #video-thumb {
             width: 100%;
-            max-width: 380px;
+            max-width: 680px;
             aspect-ratio: 16 / 9;
             object-fit: cover;
             border-radius: 0px;
             background: #1a1a1a;
             display: block;
             margin: 0 auto;
+            border-radius: var(--radius)
             /* centers it */
         }
 
@@ -452,6 +455,7 @@
             font-weight: 800;
             text-transform: uppercase;
             cursor: pointer;
+            border-radius: var(--radius);
             margin-bottom: 1rem;
         }
 
@@ -466,6 +470,7 @@
             border: var(--border-width) solid var(--border);
             margin-bottom: 20px;
             background: white;
+            border-radius: var(--radius);
         }
 
         #success-view.visible {
@@ -481,15 +486,16 @@
 
         .kofi-btn {
             display: block;
-            background: var(--accent);
-            color: white;
+            background: #ebdc09;
+            color: #333;
             padding: 14px 20px;
             font-size: 1rem;
             font-weight: 800;
             text-decoration: none;
             border: var(--border-width) solid var(--secondary);
             margin-bottom: 15px;
-            width: 100%;
+            width: 90%;
+            border-radius: var(--radius);
             text-transform: uppercase;
             box-shadow: 3px 3px 0px var(--border);
             transition: all 0.1s;
@@ -518,6 +524,7 @@
             cursor: pointer;
             box-shadow: 3px 3px 0px var(--border);
             transition: all 0.1s;
+            border-radius: var(--radius);
         }
 
         .convert-again-btn:hover {
@@ -838,8 +845,9 @@
             flex-direction: column;
             align-items: stretch;
             height: auto;
-            padding: 10px 14px 12px;
+            padding: 15px 20px 12px;
             gap: 0;
+            border-radius: var(--radius);
         }
 
         .goal-pill-top {
@@ -910,6 +918,7 @@
             font-size: 0.80rem;
             line-height: 1.6;
             color: #444;
+            border-radius: var(--radius);
         }
 
         .server-note strong {
