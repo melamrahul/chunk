@@ -363,9 +363,9 @@
             display: flex;
         }
 
-        #video-thumb {
+         #video-thumb {
             width: 100%;
-            max-width: 680px;
+            max-width: 580px;
             aspect-ratio: 16 / 9;
             object-fit: cover;
             border-radius: 0px;
@@ -504,7 +504,7 @@
         .kofi-btn:hover {
             transform: translate(-2px, -2px);
             box-shadow: 5px 5px 0px var(--border);
-            background: var(--accent-hover);
+            background: #ebdc09;
         }
 
         .kofi-btn:active {
