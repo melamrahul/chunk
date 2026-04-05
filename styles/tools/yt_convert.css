@@ -12,7 +12,7 @@
 }
 
 [data-theme="dark"] {
-  --bg: #0d0e14;
+  --bg: rgba(19, 20, 28, 0.55);
   --text: #eef0f6;
   --border: #5b87ff;
   --accent: #ff6b68;
