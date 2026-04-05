@@ -30,7 +30,10 @@
     #0b0f19;
 }
 
-[data-theme="dark"] .card,
+[data-theme="dark"] .card {
+  background: rgba(19, 20, 28, 0.55);
+}
+
 [data-theme="dark"] input,
 [data-theme="dark"] select,
 [data-theme="dark"] .tab-btn,
@@ -69,11 +72,23 @@
 }
 
 [data-theme="dark"] .goal-pill {
-  background: #13141c;
+  background: rgba(19, 20, 28, 0.55);
 }
 
 [data-theme="dark"] .goal-track {
   background: #1a1c25;
+}
+
+[data-theme="dark"] .goal-subline {
+  color: white;
+}
+
+[data-theme="dark"] .goal-pill-label {
+  color: white;
+}
+
+[data-theme="dark"] .goal-pill-pct {
+  color: white;
 }
 
 [data-theme="dark"] .youtube-faq details p {
@@ -82,7 +97,7 @@
 }
 
 [data-theme="dark"] .header {
-  background: #1a1c25;
+  background: rgba(19, 20, 28, 0.55);
 }
 
 [data-theme="dark"] .sd-story {
@@ -1435,7 +1450,7 @@ footer {
 }
 
 [data-theme="dark"] .header {
-  background-color: #1a1c25;
+  background-color: rgba(19, 20, 28, 0.55);
   color: white;
 }
 
