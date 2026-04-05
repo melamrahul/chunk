@@ -218,8 +218,8 @@
         .format-tabs {
             justify-content: space-evenly;
             display: flex;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--border)
+            padding-bottom: 15px;
+            border-bottom: 2px dotted var(--border)
         }
 
         .tab-btn {
@@ -248,7 +248,7 @@
 
         .input-section {
             padding: 15px;
-            border-bottom: var(--border-width) solid var(--border);
+            border-bottom: var(--border-width) dotted var(--border);
         }
 
         .input-group {
