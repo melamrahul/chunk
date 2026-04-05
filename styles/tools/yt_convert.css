@@ -439,10 +439,6 @@ select {
   font-size: 0.9rem;
 }
 
-/* ═══════════════════════════════════════════
-           RAHUL CONTAINER — improved styles
-           ═══════════════════════════════════════════ */
-
 /* 1. Thumbnail: full-width, centered, 16:9 */
 #video-preview {
   display: none;
@@ -451,7 +447,8 @@ select {
   text-align: center;
   padding: 14px 14px 0;
   gap: 10px;
-  border-radius: var(--radius) border-top: 2px solid var(--border);
+  border-radius: var(--radius);
+  border-top: 2px solid var(--border);
   border-bottom: 2px solid var(--border);
 }
 
