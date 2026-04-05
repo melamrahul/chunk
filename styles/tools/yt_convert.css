@@ -49,6 +49,9 @@
 
 [data-theme="dark"] #status-box {
     background: transparent;
+}
+
+[data-theme="dark"] #status-label {
     color: white;
 }
 
