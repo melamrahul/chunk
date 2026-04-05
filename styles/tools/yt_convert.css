@@ -24,10 +24,10 @@
 
 [data-theme="dark"] body {
   background:
-    radial-gradient(circle at 20% 20%, #1a1f3a 0%, transparent 40%),
-    radial-gradient(circle at 80% 10%, #1a1a2e 0%, transparent 40%),
-    radial-gradient(circle at 50% 90%, #12141e 0%, transparent 40%),
-    #0d0e14;
+    radial-gradient(circle at 20% 20%, #3b82f6 0%, transparent 45%),
+    radial-gradient(circle at 80% 10%, #8b5cf6 0%, transparent 45%),
+    radial-gradient(circle at 50% 90%, #06b6d4 0%, transparent 45%),
+    #0b0f19;
 }
 
 [data-theme="dark"] .card,
@@ -118,10 +118,10 @@ body {
   padding-bottom: 80px;
 
   background:
-    radial-gradient(circle at 20% 20%, #dfe7ff 0%, transparent 40%),
-    radial-gradient(circle at 80% 10%, #e8f0ff 0%, transparent 40%),
-    radial-gradient(circle at 50% 90%, #f1f4ff 0%, transparent 40%),
-    #eef1fb;
+    radial-gradient(circle at 20% 20%, #93c5fd 0%, transparent 45%),
+    radial-gradient(circle at 80% 10%, #c4b5fd 0%, transparent 45%),
+    radial-gradient(circle at 50% 90%, #67e8f9 0%, transparent 45%),
+    #f4f7ff;
 
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1390,7 +1390,7 @@ footer {
   align-items: center;
   gap: 6px;
   background: #e6f7ee;
-  border: 2px solid #b3dfc5;
+  border: 2px solid #3DBA6A;
   border-radius: 99px;
   padding: 6px 13px;
   font-size: 12px;
