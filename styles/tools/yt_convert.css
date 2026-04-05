@@ -38,7 +38,11 @@
 [data-theme="dark"] #success-view,
 [data-theme="dark"] .youtube-block,
 [data-theme="dark"] .kofi-btn {
-  background: #1a1c25;
+  background: #ebdc09;
+}
+[data-theme="dark"] .convert-again-btn {
+  background-color: transparent;
+  color: var(--border);
 }
 
 [data-theme="dark"] .tab-btn.active {
@@ -542,7 +546,6 @@ select {
   background: var(--success);
   color: white;
   border: none;
-  border-top: var(--border-width) solid var(--border);
   font-size: 1rem;
   font-weight: 800;
   text-transform: uppercase;
