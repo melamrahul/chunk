@@ -448,7 +448,6 @@ select {
   padding: 14px 14px 0;
   gap: 10px;
   border-radius: var(--radius);
-  border-top: 2px solid var(--border);
   border-bottom: 2px solid var(--border);
 }
 
