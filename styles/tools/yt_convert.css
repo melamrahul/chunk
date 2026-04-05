@@ -53,6 +53,10 @@
   background: #1e2a4a;
 }
 
+[data-theme="dark"] .youtube-block p {
+  color: #ffffff;
+}
+
 [data-theme="dark"] input,
 [data-theme="dark"] select {
   color: #eef0f6;
@@ -154,6 +158,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.infinity-loader {
+  width: 28px;
+  height: 28px;
+  border: 3px solid rgba(0,0,0,0.1);
+  border-top: 3px solid var(--border);
+  border-radius: 50%;
+  animation: spinLoader 0.8s linear infinite;
+}
+
+[data-theme="dark"] .infinity-loader {
+  border: 3px solid rgba(255,255,255,0.1);
+  border-top: 3px solid var(--border);
+}
+
+@keyframes spinLoader {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .spinner-ring img {
