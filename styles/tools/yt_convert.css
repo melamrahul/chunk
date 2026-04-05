@@ -32,16 +32,20 @@
   background-repeat: no-repeat;
 }
 
-[data-theme="dark"] .card, #status-box {
+[data-theme="dark"] .card {
   background: rgba(19, 20, 28, 0.55);
 }
 
 [data-theme="dark"] input,
 [data-theme="dark"] select,
 [data-theme="dark"] .tab-btn,
-[data-theme="dark"] #success-view,
+[data-theme="dark"] #status-box,
 [data-theme="dark"] .youtube-block {
   background: #1a1c25;
+}
+
+[data-theme="dark"] #success-view {
+    background: rgba(19, 20, 28, 0.55);
 }
 
 [data-theme="dark"] .kofi-btn {
