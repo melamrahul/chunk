@@ -28,6 +28,8 @@
     radial-gradient(circle at 80% 10%, #8b5cf6 0%, transparent 45%),
     radial-gradient(circle at 50% 90%, #06b6d4 0%, transparent 45%),
     #0b0f19;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 [data-theme="dark"] .card {
@@ -459,6 +461,8 @@ input:focus {
 .options-row {
   display: flex;
   gap: 10px;
+  align-items: center; 
+  justify-content: center;
   padding: 15px;
 }
 
