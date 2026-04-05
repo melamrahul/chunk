@@ -49,6 +49,7 @@
 
 [data-theme="dark"] #status-box {
     background: transparent;
+    color: white;
 }
 
 [data-theme="dark"] .kofi-btn {
