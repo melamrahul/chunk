@@ -32,14 +32,13 @@
   background-repeat: no-repeat;
 }
 
-[data-theme="dark"] .card {
+[data-theme="dark"] .card, #status-box {
   background: rgba(19, 20, 28, 0.55);
 }
 
 [data-theme="dark"] input,
 [data-theme="dark"] select,
 [data-theme="dark"] .tab-btn,
-[data-theme="dark"] #status-box,
 [data-theme="dark"] #success-view,
 [data-theme="dark"] .youtube-block {
   background: #1a1c25;
