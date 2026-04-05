@@ -1266,6 +1266,11 @@ footer {
     background-color: transparent;
 }
 
+@media (max-width: 768px) {
+    .big-container {
+        width: 100%;
+    }
+
 .trust-row {
   display: flex;
   flex-wrap: wrap;
