@@ -46,7 +46,7 @@
 
 [data-theme="dark"] .convert-again-btn {
   background-color: transparent;
-  color: var(--border);
+  color: #ffffff;
 }
 
 [data-theme="dark"] .tab-btn.active {
