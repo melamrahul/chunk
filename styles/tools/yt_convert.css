@@ -164,14 +164,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     border: 2px solid var(--border);
     border-radius: var(--radius);
-    border-bottom: var(--border-width) solid var(--border);
-
-    padding: 12px 8px;
-    margin: 10px auto 20px auto;
-
+    padding: 12px;
+    margin: 10px auto;
     max-width: 900px;
     background-color: white;
 }
