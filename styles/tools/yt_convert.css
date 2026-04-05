@@ -36,10 +36,14 @@
 [data-theme="dark"] .tab-btn,
 [data-theme="dark"] #status-box,
 [data-theme="dark"] #success-view,
-[data-theme="dark"] .youtube-block,
+[data-theme="dark"] .youtube-block {
+  background: #1a1c25;
+}
+
 [data-theme="dark"] .kofi-btn {
   background: #ebdc09;
 }
+
 [data-theme="dark"] .convert-again-btn {
   background-color: transparent;
   color: var(--border);
