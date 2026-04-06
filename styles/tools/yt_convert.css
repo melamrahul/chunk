@@ -3,6 +3,7 @@
   --text: #000000;
   --texter: white;
   --border: #4468a9;
+  --ipborder: #4468a9;
   --accent: #ff5e5b;
   --accent-hover: #e04e4b;
   --secondary: #f3f3f3;
@@ -16,7 +17,7 @@
   --bg: rgba(19, 20, 28, 0.55);
   --text: #eef0f6;
   --texter: #eef0f6;
-  --border: #5b87ff;
+  --ipborder: white;
   --accent: #ff6b68;
   --accent-hover: #e05a57;
   --secondary: #1a1c25;
@@ -441,6 +442,7 @@ body {
 input {
   flex: 1;
   padding: 12px;
+  color: var(--ipborder);
   border: var(--border-width) solid var(--border);
   font-size: 0.95rem;
   font-weight: 600;
