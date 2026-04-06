@@ -364,7 +364,7 @@ body {
 
 .tools-btn:hover {
   background: var(--border);
-  color: var(--bg);
+  color: var(--text);
 }
 
 .card {
