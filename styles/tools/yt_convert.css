@@ -38,9 +38,12 @@
 
 [data-theme="dark"] input,
 [data-theme="dark"] select,
-[data-theme="dark"] .tab-btn,
 [data-theme="dark"] .youtube-block {
-  background: #1a1c25;
+  background: rgba(19, 20, 28, 0.55);
+}
+
+[data-theme="dark"] .tab-btn {
+  background: transparent;
 }
 
 [data-theme="dark"] #success-view {
@@ -65,7 +68,7 @@
 }
 
 [data-theme="dark"] .tab-btn.active {
-  background: #1e2a4a;
+  background: #4468a9;
 }
 
 [data-theme="dark"] .youtube-block p {
