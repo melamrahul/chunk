@@ -18,7 +18,7 @@
   --accent: #ff6b68;
   --accent-hover: #e05a57;
   --secondary: #1a1c25;
-  --success: #3dba6a;
+  --success: #107225;
   --goal-green: #3dba6a;
 }
 
@@ -46,8 +46,21 @@
   background: transparent;
 }
 
+[data-theme="dark"] .tools-btn {
+  background: transparent;
+}
+
+[data-theme="dark"] .tools-btn.active {
+  color: white;
+}
+
 [data-theme="dark"] #success-view {
     background: rgba(19, 20, 28, 0.55);
+}
+
+[data-theme="dark"] footer {
+    background: rgba(19, 20, 28, 0.55);
+    color: white;
 }
 
 [data-theme="dark"] #status-box {
