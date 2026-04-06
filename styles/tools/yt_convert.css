@@ -81,7 +81,7 @@
 }
 
 [data-theme="dark"] .tab-btn.active {
-  background: #9BB5FF;
+  background: rgba(19, 20, 28, 0.55);
 }
 
 [data-theme="dark"] .youtube-block p {
