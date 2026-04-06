@@ -50,7 +50,7 @@
   background: transparent;
 }
 
-[data-theme="dark"] .tab-btn:hover {
+[data-theme="dark"] .tools-btn:hover {
   color: white;
 }
 
@@ -81,7 +81,7 @@
 }
 
 [data-theme="dark"] .tab-btn.active {
-  background: #5B86FF;
+  background: #9BB5FF;
 }
 
 [data-theme="dark"] .youtube-block p {
