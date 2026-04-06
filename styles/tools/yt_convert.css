@@ -50,7 +50,7 @@
   background: transparent;
 }
 
-[data-theme="dark"] .tools-btn.active {
+[data-theme="dark"] .tab-btn:hover {
   color: white;
 }
 
