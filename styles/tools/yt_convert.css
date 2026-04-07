@@ -430,7 +430,7 @@ body {
 .input-group {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     margin-bottom: 15px;
 }
 
@@ -445,6 +445,7 @@ input {
     padding: 18px;
     color: var(--ipborder);
     border: var(--border-width) solid var(--border);
+    
     font-size: 0.95rem;
     font-weight: 600;
     background: white;
