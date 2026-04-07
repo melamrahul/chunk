@@ -324,7 +324,6 @@ body {
     border: 2px solid var(--border);
     border-radius: var(--radius);
     padding: 12px;
-    margin: 10px auto;
     max-width: 900px;
     background-color: white;
 }
