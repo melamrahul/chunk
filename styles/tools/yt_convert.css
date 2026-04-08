@@ -54,7 +54,11 @@
     background: transparent;
 }
 
-[data-theme="dark"] .tools-btn:hover {
+[data-theme="dark"] .paste-btn {
+    background: transparent;
+}
+
+[data-theme="dark"] .paste-btn:hover {
     color: white;
 }
 
@@ -365,7 +369,23 @@ body {
     border-radius: var(--radius);
 }
 
+#paste-btn {
+    background: var(--secondary);
+    color: var(--text);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+}
+
 .tools-btn:hover {
+    background: var(--border);
+    color: var(--texter);
+}
+
+#paste-btn:hover {
     background: var(--border);
     color: var(--texter);
 }
@@ -1558,21 +1578,6 @@ footer {
 #yt-url {
     width: 100%;
     padding: 10px 40px 10px 12px;
-}
-
-#paste-btn {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    color: #666;
-}
-
-#paste-btn:hover {
-    color: #000;
 }
 
 #clipboardBackdrop {
